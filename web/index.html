@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+	<title>Xtrarim V1.2.0</title>
+</head>
+<body>
+	<h1 style="font-size: 35px; color: #FCD535;"><b>Xtrarim</b> <span style="color: green;">V1.2.0</span> </h1>
+  <div class="left-margin">
+  	<button type="button" class="button" id="start">Start Cheat</button><br>
+		<button type="button" class="button" id="stop">Close CS:GO && Cheat</button><br>
+		<button type="button" class="button">Close Xtrarim</button><br>
+  </div>
+	<div class="right-margin">
+		<h1>Status: <span id="stat"style="color: red;">OFF</span></h1>
+		<button type="button" class="button2">Not running in game.</button>
+		<button type="button" class="button2">Code Not injected</button>
+		<button type="button" class="button2">Checks Failed</button>
+		<p>Property of crypticbay.org</p>
+	</div>
+
+
+	<script type="text/javascript" src="../eel.js"></script>
+	<script type="text/javascript">
+    document.getElementById('start').addEventListener('click', function() {
+    	let onoff = document.getElementById('stat');
+			onoff.innerHTML = "ON";
+			onoff.style = "color: green;";
+			eel.main(); //run csgo cheat
+    });
+		document.getElementById('stop').addEventListener('click', function() {
+			let onoff = document.getElementById('stat');
+			onoff.innerHTML = "OFF";
+			onoff.style = "color: red;";
+		});
+  </script>
+</body>
+</html>
